@@ -6,7 +6,6 @@ License:	GPL
 Group:		Graphical desktop/GNOME
 URL:		http://det.cable.nu/teatime/index.rbx
 Source0:	http://det.cable.nu/pakete/teatime_applet_2-%version.tar.bz2
-BuildRoot:	%_tmppath/%name-buildroot
 Buildrequires:	libpanel-applet-devel >= 2.6
 Buildrequires:	libgstreamer-plugins-base-devel
 Buildrequires:	perl-XML-Parser
