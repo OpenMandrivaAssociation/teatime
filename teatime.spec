@@ -14,7 +14,8 @@ BuildRoot:	%_tmppath/%name-buildroot
 BuildRequires:	ruby-panelapplet2
 BuildRequires:	ruby-cairo
 BuildRequires:	ruby-gst
-BuildRequires:       ruby-gconf2
+BuildRequires:  ruby-gconf2
+BuildRequires:  ruby-RubyGems
 
 BuildRequires:	x11-server-xvfb
 Requires:	ruby-panelapplet2
