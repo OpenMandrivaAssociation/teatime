@@ -16,6 +16,7 @@ BuildRequires:	ruby-cairo
 BuildRequires:	ruby-gst
 BuildRequires:  ruby-gconf2
 BuildRequires:  ruby-gnome2
+BuildRequires:  ruby-gettext
 BuildRequires:  ruby-RubyGems
 
 BuildRequires:	x11-server-xvfb
@@ -23,7 +24,8 @@ Requires:	ruby-panelapplet2
 Requires:	ruby-cairo
 Requires:	ruby-gst
 Requires:       ruby-gconf2
-Requires:  ruby-gnome2
+Requires:  	ruby-gnome2
+Requires:  	ruby-gettext
 
 %description
 This is the GNOME 2 port of the legendary teatime applet. There are big
