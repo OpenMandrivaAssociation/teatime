@@ -14,10 +14,13 @@ BuildRoot:	%_tmppath/%name-buildroot
 BuildRequires:	ruby-panelapplet2
 BuildRequires:	ruby-cairo
 BuildRequires:	ruby-gst
+BuildRequires:       ruby-gconf2
+
 BuildRequires:	x11-server-xvfb
 Requires:	ruby-panelapplet2
 Requires:	ruby-cairo
 Requires:	ruby-gst
+Requires:       ruby-gconf2
 
 %description
 This is the GNOME 2 port of the legendary teatime applet. There are big
