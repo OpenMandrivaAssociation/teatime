@@ -1,17 +1,16 @@
 Summary:	Teatime applet for GNOME 2
 Name:		teatime
-Version:	3.0
+Version:	3.3
 Release:	%mkrel 1
 License:	GPLv3
 Group:		Graphical desktop/GNOME
 URL:		http://det.cable.nu/teatime/index.rbx
 Source0:	http://det.cable.nu/pakete/teatime-%version.tar.bz2
-#configure does not like ruby-gettext 1.10
-Patch:		teatime-3.0-configure-check.patch
 #gw disable installation here
-Patch1:		teatime-3.0-installation.patch
+Patch1:		teatime-3.3-installation.patch
 BuildRoot:	%_tmppath/%name-buildroot
 BuildRequires:	ruby-panelapplet2
+BuildRequires:	ruby-gtk2 >= 0.19
 BuildRequires:	ruby-cairo
 BuildRequires:	ruby-gst
 BuildRequires:  ruby-gconf2
@@ -21,6 +20,7 @@ BuildRequires:  ruby-RubyGems
 
 BuildRequires:	x11-server-xvfb
 Requires:	ruby-panelapplet2
+Requires:	ruby-gtk2 >= 0.19
 Requires:	ruby-cairo
 Requires:	ruby-gst
 Requires:       ruby-gconf2
@@ -35,12 +35,11 @@ and some other gimmiks.
 
 %prep
 %setup -q
-%patch -p1
-%patch1 -p1
+%patch1 -p1 -b .installation
 
 %build
 cd teatime
-xvfb-run ruby setup.rb config
+xvfb-run ruby setup.rb config ||:
 ruby setup.rb setup
 
 
