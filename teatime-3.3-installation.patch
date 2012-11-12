@@ -1,0 +1,17 @@
+diff -p -up teatime-3.3/teatime/post-install.rb.installation teatime-3.3/teatime/post-install.rb
+--- teatime-3.3/teatime/post-install.rb.installation	2009-05-26 18:01:47.000000000 +0200
++++ teatime-3.3/teatime/post-install.rb	2009-06-01 12:20:13.000000000 +0200
+@@ -25,10 +25,10 @@ FileUtils.cd 'data-ext'
+ 
+ datadir = config('datadir')
+ prefix =  config('prefix')
+-FileUtils.cp 'GNOME_TeatimeApplet3_Factory.server', "#{prefix}/lib/bonobo/servers"
++#FileUtils.cp 'GNOME_TeatimeApplet3_Factory.server', "#{prefix}/lib/bonobo/servers"
+ 
+ # update the gconf schema database
+ IO.popen("gconftool-2 --get-default-source") { |line| ENV['GCONF_CONFIG_SOURCE'] = line.gets.strip; break }
+ system("gconftool-2 --makefile-install-rule #{datadir}/gconf/schemas/teatime_applet_3.schemas")
+ 
+-FileUtils.cd '..'
+\ Kein Zeilenumbruch am Dateiende.
++FileUtils.cd '..'
