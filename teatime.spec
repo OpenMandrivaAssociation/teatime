@@ -4,7 +4,7 @@ Version:	3.3
 Release:	%mkrel 2
 License:	GPLv3
 Group:		Graphical desktop/GNOME
-URL:		http://det.cable.nu/teatime/index.rbx
+URL:		https://det.cable.nu/teatime/index.rbx
 Source0:	http://det.cable.nu/pakete/teatime-%version.tar.bz2
 #gw disable installation here
 Patch1:		teatime-3.3-installation.patch
