@@ -1,7 +1,7 @@
 Summary:	Teatime applet for GNOME 2
 Name:		teatime
 Version:	3.3
-Release:	%mkrel 2
+Release:	3
 License:	GPLv3
 Group:		Graphical desktop/GNOME
 URL:		https://det.cable.nu/teatime/index.rbx
